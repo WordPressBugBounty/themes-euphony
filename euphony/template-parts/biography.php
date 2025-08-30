@@ -23,14 +23,14 @@
 	</div><!-- .author-avatar -->
 
 	<div class="author-description">
-		<h2 class="author-title"><span class="author-heading screen-reader-text"><?php esc_html_e( 'Author:', 'euphony' ); ?></span> <?php echo get_the_author(); ?></h2>
+		<h2 class="author-title"><span class="author-heading screen-reader-text"><?php esc_html_e( 'Author:', 'euphony' ); ?></span> <?php echo esc_html( get_the_author() ); ?></h2>
 
 		<p class="author-bio">
 			<?php the_author_meta( 'description' ); ?>
 		</p><!-- .author-bio -->
 
 		<a class="author-link" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author">
-			<?php printf( __( 'View all posts by %s', 'euphony' ), get_the_author() ); ?>
+			<?php printf( __( 'View all posts by %s', 'euphony' ), esc_attr( get_the_author() ) ); ?>
 		</a>
 	</div><!-- .author-description -->
 </div><!-- .author-info -->
