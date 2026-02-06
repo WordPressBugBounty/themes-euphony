@@ -132,7 +132,7 @@ function euphony_mejs_add_container_class()
 	</script>
 <?php
 }
-add_action('wp_print_footer_scripts', 'euphony_mejs_add_container_class');
+add_action('wp_print_footer_scripts', 'euphony_mejs_add_container_class', 11);
 
 if (! function_exists('euphony_setup')) :
 	/**
@@ -543,10 +543,6 @@ function euphony_scripts()
 
 	// Theme block stylesheet.
 	wp_enqueue_style('euphony-block-style', get_theme_file_uri('assets/css/blocks.css'), array('euphony-style'), '1.0');
-
-	// Load the html5 shiv.
-	wp_enqueue_script('euphony-html5',  get_theme_file_uri('assets/js/html5.min.js'), array(), '3.7.3');
-	wp_script_add_data('euphony-html5', 'conditional', 'lt IE 9');
 
 	// Font Awesome
 	wp_enqueue_style('font-awesome', trailingslashit(esc_url(get_template_directory_uri())) . 'assets/css/font-awesome/css/all.min.css', array(), '6.4.2', 'all');

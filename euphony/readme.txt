@@ -2,7 +2,7 @@
 Contributors: catchthemes
 Tags: grid-layout, one-column, two-columns, right-sidebar, custom-header, custom-menu, custom-logo, editor-style, featured-image-header, featured-images, flexible-header, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, entertainment, photography, portfolio
 Requires at least: 5.9
-Tested up to: 6.8
+Tested up to: 6.9
 Requires PHP: 5.6
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -40,6 +40,14 @@ You can check our Theme Demo at https://www.catchthemes.com/demo/euphony/
 For more FAQs, visit https://catchthemes.com/frequently-asked-questions/
 
 == Changelog ==
+
+= 2.1.1 (Released: December 10, 2025) =
+* Updated: Version due to issue in WordPress.org trac ticket
+
+= 2.1 (Released: December 10, 2025) =
+* Bug Fixed: Playlist issue after WordPress 6.9 update
+* Bug Fixed: Deprecated Function WP_Dependencies-add_data() warning after WordPress update 6.9
+* Updated: WordPress 6.9 ready
 
 = 2.0 (Released: August 30, 2025) =
 * Added: Tiktok, Threads, X-twitter, Tel, Bluesky, Etsy, Snapchat and Telegram icons
