@@ -20,8 +20,11 @@ $jetpack_defaults = array(
 );
 
 // Get Jetpack options for testimonial.
-$headline    = get_option( 'jetpack_testimonial_title', esc_html__('Testimonials', 'euphony') );
-$subheadline = get_option( 'jetpack_testimonial_content');
+// Jetpack 14.2+ stores archive title/content as a theme_mod array (jetpack_testimonials).
+// Fall back to the old flat WP option for sites that have not migrated yet.
+$jetpack_testimonials = (array) get_theme_mod( 'jetpack_testimonials', array() );
+$headline    = ! empty( $jetpack_testimonials['page-title'] ) ? $jetpack_testimonials['page-title'] : get_option( 'jetpack_testimonial_title', esc_html__('Testimonials', 'euphony') );
+$subheadline = ! empty( $jetpack_testimonials['page-content'] ) ? $jetpack_testimonials['page-content'] : get_option( 'jetpack_testimonial_content');
 
 $classes[] = 'section testimonial-content-section';
 
