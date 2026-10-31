@@ -10,7 +10,7 @@
 /**
  * Adds custom classes to the array of body classes.
  *
- * @since Euphony Pro 1.0
+ * @since Euphony 1.0
  *
  * @param array $classes Classes for the body element.
  * @return array (Maybe) filtered body classes.
@@ -220,7 +220,7 @@ if ( ! function_exists( 'euphony_content_nav' ) ) :
 	/**
 	 * Display navigation/pagination when applicable
 	 *
-	 * @since Euphony Pro 1.0
+	 * @since Euphony 1.0
 	 */
 	function euphony_content_nav() {
 		global $wp_query;
@@ -263,7 +263,7 @@ function euphony_check_section( $value ) {
  * @param [string/array] $attr Query string or array of attributes.
  * @return [string] image html
  *
- * @since Euphony Pro 1.0
+ * @since Euphony 1.0
  */
 function euphony_get_first_image( $postID, $size, $attr, $src = false ) {
 	ob_start();
@@ -338,7 +338,7 @@ if ( ! function_exists( 'euphony_truncate_phrase' ) ) :
 	 *
 	 * If the first `$max_characters` of the string does not contain a space character, an empty string will be returned.
 	 *
-	 * @since Euphony Pro 1.0
+	 * @since Euphony 1.0
 	 *
 	 * @param string $text            A string to be shortened.
 	 * @param integer $max_characters The maximum number of characters to return.
@@ -367,7 +367,7 @@ if ( ! function_exists( 'euphony_get_the_content_limit' ) ) :
 	 *
 	 * Strips out tags and shortcodes, limits the output to `$max_char` characters, and appends an ellipsis and more link to the end.
 	 *
-	 * @since Euphony Pro 1.0
+	 * @since Euphony 1.0
 	 *
 	 * @param integer $max_characters The maximum number of characters to return.
 	 * @param string  $more_link_text Optional. Text of the more link. Default is "(more...)".
@@ -409,7 +409,7 @@ if ( ! function_exists( 'euphony_content_image' ) ) :
 	 * To override this in a child theme
 	 * simply fabulous-fluid your own euphony_content_image(), and that function will be used instead.
 	 *
-	 * @since Euphony Pro 1.0
+	 * @since Euphony 1.0
 	 */
 	function euphony_content_image() {
 		if ( has_post_thumbnail() && euphony_jetpack_featured_image_display() && is_singular() ) {

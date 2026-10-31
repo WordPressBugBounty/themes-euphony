@@ -157,7 +157,7 @@ if ( ! function_exists( 'euphony_is_header_media_logo_active' ) ) :
 	/**
 	* Return true if header logo is active
 	*
-	* @since Euphony Pro 1.0
+	* @since Euphony 1.0
 	*/
 	function euphony_is_header_media_logo_active( $control ) {
 		$logo = $control->manager->get_setting( 'euphony_header_media_logo' )->value();

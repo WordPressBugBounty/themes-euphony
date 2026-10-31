@@ -75,7 +75,7 @@ add_action( 'customize_register', 'euphony_sort_sections_list', 99 );
 /**
  * Returns an array of visibility options for featured sections
  *
- * @since Euphony Pro 1.0
+ * @since Euphony 1.0
  */
 function euphony_section_visibility_options() {
 	$options = array(
@@ -90,7 +90,7 @@ function euphony_section_visibility_options() {
 /**
  * Returns an array of featured content options
  *
- * @since Euphony Pro 1.0
+ * @since Euphony 1.0
  */
 function euphony_sections_style_options() {
 	$options = array(
@@ -104,7 +104,7 @@ function euphony_sections_style_options() {
 /**
  * Returns an array of featured content options
  *
- * @since Euphony Pro 1.0
+ * @since Euphony 1.0
  */
 function euphony_sections_layout_options() {
 	$options = array(
@@ -120,7 +120,7 @@ function euphony_sections_layout_options() {
 /**
  * Returns an array of layout options for portfolio
  *
- * @since Euphony Pro 1.0
+ * @since Euphony 1.0
  */
 function euphony_portfolio_layout_options() {
 	$options = array(
@@ -136,7 +136,7 @@ function euphony_portfolio_layout_options() {
 /**
  * Returns an array of section types
  *
- * @since Euphony Pro 1.0
+ * @since Euphony 1.0
  */
 function euphony_section_type_options() {
 	$options = array(
@@ -152,7 +152,7 @@ function euphony_section_type_options() {
 /**
  * Returns an array of color schemes registered for catchresponsive.
  *
- * @since Euphony Pro 1.0
+ * @since Euphony 1.0
  */
 function euphony_get_pagination_types() {
 	$pagination_types = array(
@@ -191,7 +191,7 @@ function euphony_generate_post_array( $post_type = 'post' ) {
 /**
  * Returns an array of feature slider transition effects
  *
- * @since Euphony Pro 1.0
+ * @since Euphony 1.0
  */
 function euphony_transition_effects() {
 	$options = array(
@@ -282,7 +282,7 @@ function euphony_transition_effects() {
 /**
  * Returns an array of featured content show registered
  *
- * @since Euphony Pro 1.0
+ * @since Euphony 1.0
  */
 function euphony_content_show() {
 	$options = array(
@@ -297,7 +297,7 @@ function euphony_content_show() {
 /**
  * Returns an array of featured content show registered
  *
- * @since Euphony Pro 1.0
+ * @since Euphony 1.0
  */
 function euphony_meta_show() {
 	$options = array(

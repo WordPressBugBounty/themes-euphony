@@ -95,7 +95,7 @@ function euphony_sanitize_image( $image, $setting ) {
  * @param  $input entered value
  * @return sanitized output
  *
- * @since Euphony Pro 1.0
+ * @since Euphony 1.0
  */
 function euphony_sanitize_category_list( $input ) {
     if ( is_array( $input ) && '' != $input ) {

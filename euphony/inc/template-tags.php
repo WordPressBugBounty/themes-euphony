@@ -153,7 +153,7 @@ if ( ! function_exists( 'euphony_entry_category_date' ) ) :
 	 *
 	 * Create your own euphony_entry_category_date() function to override in a child theme.
 	 *
-	 * @since Euphony Pro 1.0
+	 * @since Euphony 1.0
 	 */
 	function euphony_entry_category_date() {
 		$meta = '<div class="entry-meta">';
@@ -206,7 +206,7 @@ if ( ! function_exists( 'euphony_categorized_blog' ) ) :
 	 *
 	 * Create your own euphony_categorized_blog() function to override in a child theme.
 	 *
-	 * @since Euphony Pro 1.0
+	 * @since Euphony 1.0
 	 *
 	 * @return bool True if there is more than one category, false otherwise.
 	 */
@@ -242,7 +242,7 @@ endif;
  * @display footer_text
  * @action euphony_footer
  *
- * @since Euphony Pro 1.0
+ * @since Euphony 1.0
  */
 function euphony_footer_content() {
 	$theme_data = wp_get_theme();
@@ -379,7 +379,7 @@ if ( ! function_exists( 'euphony_slider_entry_category' ) ) :
  *
  * Create your own euphony_entry_category_date() function to override in a child theme.
  *
- * @since Euphony Pro 1.0
+ * @since Euphony 1.0
  */
 function euphony_slider_entry_category() {
 	$meta = '<div class="entry-meta">';
@@ -414,7 +414,7 @@ if ( ! function_exists( 'euphony_entry_date_author' ) ) :
  *
  * Create your own euphony_entry_category_date() function to override in a child theme.
  *
- * @since Euphony Pro 1.0
+ * @since Euphony 1.0
  */
 function euphony_entry_date_author() {
 	$meta = '<div class="entry-meta">';

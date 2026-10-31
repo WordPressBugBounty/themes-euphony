@@ -2,8 +2,8 @@
 Contributors: catchthemes
 Tags: grid-layout, one-column, two-columns, right-sidebar, custom-header, custom-menu, custom-logo, editor-style, featured-image-header, featured-images, flexible-header, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, entertainment, photography, portfolio
 Requires at least: 5.9
-Tested up to: 7.0
-Requires PHP: 5.6
+Tested up to: 7.1
+Requires PHP: 7.4
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -40,6 +40,15 @@ You can check our Theme Demo at https://www.catchthemes.com/demo/euphony/
 For more FAQs, visit https://catchthemes.com/frequently-asked-questions/
 
 == Changelog ==
+
+= 2.3 (Released: October 31, 2026) =
+* Bug Fixed: Theme translations are now loaded at the right time, clearing the WordPress 6.7 and above notice
+* Bug Fixed: Site no longer breaks on hosts where WordPress cannot write files directly
+* Bug Fixed: Header video caused an invalid background image address, which made the browser ask to access other devices on the local network
+* Bug Fixed: Empty background image address was output when no header image was set
+* Bug Fixed: Search box label was not available for translation
+* Updated: Minimum supported PHP version is now 7.4
+* Updated: WordPress 7.1 ready
 
 = 2.2 (Released: May 25, 2026) =
 * Bug Fixed: Testimonial Custom Post Type Archive Title and Content issue with Jetpack

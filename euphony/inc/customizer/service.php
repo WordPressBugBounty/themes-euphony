@@ -2,7 +2,7 @@
 /**
  * Services options
  *
- * @package Euphony Pro
+ * @package Euphony
  */
 
 /**
@@ -133,7 +133,7 @@ if ( ! function_exists( 'euphony_is_services_active' ) ) :
 	/**
 	* Return true if services content is active
 	*
-	* @since Euphony Pro 1.0
+	* @since Euphony 1.0
 	*/
 	function euphony_is_services_active( $control ) {
 		$enable = $control->manager->get_setting( 'euphony_service_option' )->value();

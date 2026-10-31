@@ -9,7 +9,7 @@
 /**
  * Adds Social Icons widget.
  *
- * @since Euphony Pro 1.0
+ * @since Euphony 1.0
  */
 class Euphony_Social_Icons_Widget extends WP_Widget {
 

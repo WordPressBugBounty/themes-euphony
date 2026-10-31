@@ -46,7 +46,7 @@ if ( ! function_exists( 'euphony_is_sticky_playlist_active' ) ) :
 	/**
 	* Return true if sticky_playlist is active
 	*
-	* @since Euphony Pro 1.0
+	* @since Euphony 1.0
 	*/
 	function euphony_is_sticky_playlist_active( $control ) {
 		$enable = $control->manager->get_setting( 'euphony_sticky_playlist_visibility' )->value();

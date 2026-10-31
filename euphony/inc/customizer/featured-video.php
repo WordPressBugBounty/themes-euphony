@@ -133,7 +133,7 @@ if ( ! function_exists( 'euphony_is_featured_video_active' ) ) :
 	/**
 	* Return true if featured content is active
 	*
-	* @since Euphony Pro 1.0
+	* @since Euphony 1.0
 	*/
 	function euphony_is_featured_video_active( $control ) {
 		$enable = $control->manager->get_setting( 'euphony_featured_video_option' )->value();

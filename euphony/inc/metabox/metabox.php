@@ -13,7 +13,7 @@
 /**
  * Class to Renders and save metabox options
  *
- * @since Euphony Pro 1.0
+ * @since Euphony 1.0
  */
 class Euphony_Metabox {
 	private $meta_box;
@@ -23,7 +23,7 @@ class Euphony_Metabox {
 	/**
 	* Constructor
 	*
-	* @since Euphony Pro 1.0
+	* @since Euphony 1.0
 	*
 	* @access public
 	*
@@ -52,7 +52,7 @@ class Euphony_Metabox {
 	/**
 	* Add Meta Box for multiple post types.
 	*
-	* @since Euphony Pro 1.0
+	* @since Euphony 1.0
 	*
 	* @access public
 	*/
@@ -63,7 +63,7 @@ class Euphony_Metabox {
 	/**
 	* Renders metabox
 	*
-	* @since Euphony Pro 1.0
+	* @since Euphony 1.0
 	*
 	* @access public
 	*/
@@ -130,7 +130,7 @@ class Euphony_Metabox {
 	 *
 	 * @action save_post
 	 *
-	 * @since Euphony Pro 1.0
+	 * @since Euphony 1.0
 	 *
 	 * @access public
 	 */
@@ -164,8 +164,31 @@ class Euphony_Metabox {
 	}
 }
 
-$euphony_metabox = new Euphony_Metabox(
-	'euphony-options',                  //metabox id
-	esc_html__( 'Euphony Options', 'euphony' ), //metabox title
-	array( 'page', 'post' )             //metabox post types
-);
+if ( ! function_exists( 'euphony_metabox_init' ) ) :
+	/**
+	 * Register the theme options metabox.
+	 *
+	 * The constructor takes a translated title, so instantiating this at file scope ran
+	 * a translation function before the text domain was loaded, which trips the
+	 * _load_textdomain_just_in_time notice on WordPress 6.7+. Metabox hooks are
+	 * admin-only, so this runs on init behind an is_admin() check.
+	 *
+	 * @since Euphony 2.3
+	 *
+	 * @return void
+	 */
+	function euphony_metabox_init() {
+
+		if ( ! is_admin() ) {
+			return;
+		}
+
+		new Euphony_Metabox(
+			'euphony-options',                  //metabox id
+			esc_html__( 'Euphony Options', 'euphony' ), //metabox title
+			array( 'page', 'post' )             //metabox post types
+		);
+	}
+endif;
+
+add_action( 'init', 'euphony_metabox_init' );

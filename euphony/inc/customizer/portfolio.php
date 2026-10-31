@@ -131,7 +131,7 @@ if ( ! function_exists( 'euphony_is_portfolio_active' ) ) :
 	/**
 	* Return true if portfolio is active
 	*
-	* @since Euphony Pro 1.0
+	* @since Euphony 1.0
 	*/
 	function euphony_is_portfolio_active( $control ) {
 		$enable = $control->manager->get_setting( 'euphony_portfolio_option' )->value();

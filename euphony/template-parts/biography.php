@@ -12,7 +12,7 @@
 		/**
 		 * Filter the Euphony author bio avatar size.
 		 *
-		 * @since Euphony Pro 1.0
+		 * @since Euphony 1.0
 		 *
 		 * @param int $size The avatar height and width size in pixels.
 		 */

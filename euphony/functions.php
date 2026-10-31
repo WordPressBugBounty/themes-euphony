@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Euphony Pro functions and definitions
+ * Euphony functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
@@ -147,7 +147,7 @@ if (! function_exists('euphony_setup')) :
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on Euphony Pro, use a find and replace
+		 * If you're building a theme based on Euphony, use a find and replace
 		 * to change 'euphony' to the name of your theme in all the template files.
 		 */
 		load_theme_textdomain('euphony', get_parent_theme_file_path('/languages'));
@@ -467,11 +467,11 @@ add_action('widgets_init', 'euphony_widgets_init');
 
 if (! function_exists('euphony_fonts_url')) :
 	/**
-	 * Register Google fonts for Euphony Pro
+	 * Register Google fonts for Euphony
 	 *
 	 * Create your own euphony_fonts_url() function to override in a child theme.
 	 *
-	 * @since Euphony Pro 1.0
+	 * @since Euphony 1.0
 	 *
 	 * @return string Google fonts URL for the theme.
 	 */
@@ -522,7 +522,7 @@ endif;
  *
  * Adds a `js` class to the root `<html>` element when JavaScript is detected.
  *
- * @since Euphony Pro 1.0
+ * @since Euphony 1.0
  */
 function euphony_javascript_detection()
 {
@@ -616,7 +616,7 @@ add_action('wp_enqueue_scripts', 'euphony_scripts');
 /**
  * Enqueues editor styles for Gutenberg.
  *
- * @since Euphony Pro 1.0
+ * @since Euphony 1.0
  */
 function euphony_block_editor_styles()
 {
@@ -635,7 +635,7 @@ if (! function_exists('euphony_excerpt_length')) :
 	 * function tied to the excerpt_length filter hook.
 	 * @uses filter excerpt_length
 	 *
-	 * @since Euphony Pro 1.0
+	 * @since Euphony 1.0
 	 */
 	function euphony_excerpt_length($length)
 	{
@@ -683,7 +683,7 @@ if (! function_exists('euphony_custom_excerpt')) :
 	 *
 	 * function tied to the get_the_excerpt filter hook.
 	 *
-	 * @since Euphony Pro 1.0
+	 * @since Euphony 1.0
 	 */
 	function euphony_custom_excerpt($output)
 	{
@@ -713,7 +713,7 @@ if (! function_exists('euphony_more_link')) :
 	 *
 	 * function tied to the the_content_more_link filter hook.
 	 *
-	 * @since Euphony Pro 1.0
+	 * @since Euphony 1.0
 	 */
 	function euphony_more_link($more_link, $more_link_text)
 	{
@@ -872,7 +872,7 @@ add_action('tgmpa_register', 'euphony_register_required_plugins');
 /**
  * Checks if there are options already present from free version and adds it to the Pro theme options
  *
- * @since Euphony Pro 1.0
+ * @since Euphony 1.0
  * @hook after_theme_switch
  */
 function euphony_setup_options($old_theme_name)

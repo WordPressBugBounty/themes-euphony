@@ -8,7 +8,7 @@
 /**
  * Sets up the WordPress core custom header and custom background features.
  *
- * @since Euphony Pro 1.0
+ * @since Euphony 1.0
  *
  * @see euphony_header_style()
  */
@@ -20,7 +20,7 @@ function euphony_custom_header_and_background() {
 	/**
 	 * Filter the arguments used when adding 'custom-header' support in Euphony.
 	 *
-	 * @since Euphony Pro 1.0
+	 * @since Euphony 1.0
 	 *
 	 * @param array $args {
 	 *     An array of custom-header support arguments.

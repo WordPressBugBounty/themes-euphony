@@ -2,7 +2,7 @@
 /**
  * Primary Menu Template
  *
- * @package Euphony Pro
+ * @package Euphony
  */
 
 ?>

@@ -14,7 +14,7 @@ if ( ! function_exists( 'euphony_header_style' ) ) :
 	function euphony_header_style() {
 		$header_image = euphony_featured_overall_image();
 
-	    if ( 'disable' !== $header_image ) : ?>
+	    if ( is_string( $header_image ) && '' !== $header_image ) : ?>
 	        <style type="text/css" rel="header-image">
 	            .custom-header .wrapper:before {
 	                background-image: url( <?php echo esc_url( $header_image ); ?>);
@@ -68,7 +68,7 @@ if ( ! function_exists( 'euphony_featured_image' ) ) :
 	 * To override this in a child theme
 	 * simply create your own euphony_featured_image(), and that function will be used instead.
 	 *
-	 * @since Euphony Pro 1.0
+	 * @since Euphony 1.0
 	 */
 	function euphony_featured_image() {
 		if ( is_header_video_active() && has_header_video() ) {
@@ -119,7 +119,7 @@ if ( ! function_exists( 'euphony_featured_page_post_image' ) ) :
 	 * To override this in a child theme
 	 * simply create your own euphony_featured_imaage_pagepost(), and that function will be used instead.
 	 *
-	 * @since Euphony Pro 1.0
+	 * @since Euphony 1.0
 	 */
 	function euphony_featured_page_post_image() {
 		$thumbnail = 'euphony-slider';
@@ -147,7 +147,7 @@ if ( ! function_exists( 'euphony_featured_overall_image' ) ) :
 	 * To override this in a child theme
 	 * simply create your own euphony_featured_pagepost_image(), and that function will be used instead.
 	 *
-	 * @since Euphony Pro 1.0
+	 * @since Euphony 1.0
 	 */
 	function euphony_featured_overall_image() {
 		global $post;
@@ -208,7 +208,7 @@ if ( ! function_exists( 'euphony_header_media_text' ) ):
 	/**
 	 * Display Header Media Text
 	 *
-	 * @since Euphony Pro 1.0
+	 * @since Euphony 1.0
 	 */
 	function euphony_header_media_text() {
 
@@ -265,7 +265,7 @@ if ( ! function_exists( 'euphony_has_header_media_text' ) ):
 	/**
 	 * Return Header Media Text fro front page
 	 *
-	 * @since Euphony Pro 1.0
+	 * @since Euphony 1.0
 	 */
 	function euphony_has_header_media_text() {
 		$header_image = euphony_featured_overall_image();

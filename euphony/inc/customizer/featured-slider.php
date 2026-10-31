@@ -82,7 +82,7 @@ if ( ! function_exists( 'euphony_is_slider_active' ) ) :
 	/**
 	* Return true if slider is active
 	*
-	* @since Euphony Pro 1.0
+	* @since Euphony 1.0
 	*/
 	function euphony_is_slider_active( $control ) {
 		$enable = $control->manager->get_setting( 'euphony_slider_option' )->value();

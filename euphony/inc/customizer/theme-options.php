@@ -226,7 +226,7 @@ if ( ! function_exists( 'euphony_scroll_plugins_inactive' ) ) :
 	/**
 	* Return true if infinite scroll functionality exists
 	*
-	* @since Euphony Pro 1.0
+	* @since Euphony 1.0
 	*/
 	function euphony_scroll_plugins_inactive( $control ) {
 		if ( ( class_exists( 'Jetpack' ) && Jetpack::is_module_active( 'infinite-scroll' ) ) || class_exists( 'Catch_Infinite_Scroll' ) ) {
@@ -242,7 +242,7 @@ if ( ! function_exists( 'euphony_is_static_page_enabled' ) ) :
 	/**
 	* Return true if A Static Page is enabled
 	*
-	* @since Euphony Pro 1.1.2
+	* @since Euphony 1.1.2
 	*/
 	function euphony_is_static_page_enabled( $control ) {
 		$enable = $control->manager->get_setting( 'show_on_front' )->value();
